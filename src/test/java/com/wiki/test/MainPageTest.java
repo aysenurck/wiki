@@ -35,7 +35,7 @@ public class MainPageTest extends BaseTest {
     @Test(priority = 2)
     @Severity(SeverityLevel.BLOCKER)
     @Story("User tries to search and take snapshoot.")
-    @Description("Success Results Snapshoot")
+    @Description("Success Result Snapshoot")
     public void takeSnapshootResults() {
         new MainPage(driver)
                 .mainSearch(ReadProperties.getSearchWord())
