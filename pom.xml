@@ -21,9 +21,16 @@
         <slf4j-api-version>1.7.32</slf4j-api-version>
         <slf4j-simple-version>1.7.30</slf4j-simple-version>
         <commons-lang3-version>3.7</commons-lang3-version>
+        <webdrivermanager-version>5.3.0</webdrivermanager-version>
     </properties>
 
     <dependencies>
+          <dependency>
+            <groupId>io.github.bonigarcia</groupId>
+            <artifactId>webdrivermanager</artifactId>
+            <version>${webdrivermanager-version}</version>
+            <scope>test</scope>
+        </dependency> 
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-java</artifactId>
