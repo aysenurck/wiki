@@ -14,6 +14,7 @@ This project includes sample test cases on the wikipedia search page.
 
 - [Java SDK](https://www.oracle.com/java/technologies/downloads/)
 - [Maven](https://maven.apache.org/)
+- [Alllure Report](https://docs.qameta.io/allure-report/)
 
 ## Installation
 
