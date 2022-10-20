@@ -10,8 +10,7 @@ public class BaseTest {
 
     protected static WebDriver driver;
     public static String baseUrl = ReadProperties.getURL();
-    public static String ChromePath = "C:\\drivers\\chromedriver.exe";
-    //protected static String ChromePath = "/usr/bin/chromedriver";
+    
 
     public WebDriver getDriver() {
         return driver;
@@ -19,8 +18,7 @@ public class BaseTest {
 
     @BeforeClass
     public void setupTest() {
-        System.setProperty("webdriver.chrome.driver",ChromePath);
-
+        WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.get(baseUrl);
